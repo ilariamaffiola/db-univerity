@@ -9,7 +9,7 @@ WHERE `cfu` > 10;
 
 SELECT *
 FROM `students`
-WHERE `date_of_birth` < DATE_SUB(CURRENT_DATE(), INTERVAL 30 YEAR )
+WHERE `date_of_birth` < DATE_SUB(CURRENT_DATE(), INTERVAL 30 YEAR );
 
 SELECT * FROM `courses`
 WHERE `period` = 'I semestre' 
@@ -21,7 +21,11 @@ AND HOUR(`hour`) >= 14;
 
 SELECT *
 FROM `degrees`
-WHERE `level` = 'magistrale'
+WHERE `level` = 'magistrale';
 
 SELECT COUNT(`id`)
 FROM `departEments`;
+
+SELECT COUNT(`id`)
+FROM `teachers`
+WHERE `phone` IS NULL;
