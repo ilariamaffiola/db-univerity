@@ -15,3 +15,9 @@
     SELECT `exam_id` AS `esame`, AVG(`vote`) AS `media_voto`
     FROM `exam_student`
     GROUP BY `exam_id`
+
+4.
+
+    SELECT COUNT(`name`) AS `corso`, `department_id` AS `dipartimento`
+    FROM `degrees`
+    GROUP BY `dipartimento`;
